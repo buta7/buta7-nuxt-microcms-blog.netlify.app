@@ -11,9 +11,11 @@
 <script>
 import axios from 'axios'
 export default {
-  async asyncData({$config}) {
+  async asyncData({params, $config}) {
+    const page = params.p || '1'
+    const limit = 10
     const { data } = await axios.get(
-      $config.baseUrl+'/blog',
+      $config.baseUrl+'/blog?limit=${limit}&offset=${(page - 1) * limit}',
       {
         headers: { 'X-API-KEY': $config.apiKey }
       }
