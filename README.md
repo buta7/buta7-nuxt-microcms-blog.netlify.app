@@ -29,22 +29,22 @@ npm install --save node-sass sass-loader
 npm install --save-dev @nuxtjs/dotenv
 ```
 
-## Microcms
+## 設定
+
+### Microcms
 
 * サービス登録
     * サービス名: hige-blog
     * サービスID: hige-blog.microcms.io
 * APIの基本情報
-    * API名: blog
+    * API名: ブログ
     * エンドポイント: https://hige-blog.microcms.io/api/v1/blog
     * APIの型を選択: リスト形式
     * APIスキーマ
         * title/タイトル/テキストフィールド
         * body/本文/リッチエディタ
-* NetlifyのWebhook(後述)を登録
-    * API設定＞Webhook>Netlify
 
-## Deploy to Netlify
+### Netlify
 
 * Build settings
     * Repository: github
@@ -54,6 +54,25 @@ npm install --save-dev @nuxtjs/dotenv
     * `API_KEY`: microcmsのAPI-KEY
     * `API_BASE_URL`: https://hige-blog.microcms.io/api/v1
 * Webhook設定
+
+### Microcms + Netlify
+
+* NetlifyのWebhook(前述)を登録
+    * API設定＞Webhook>Netlify
+
+### カテゴリー実装
+
+* APIの基本情報
+    * API名: カテゴリー
+    * エンドポイント: https://hige-blog.microcms.io/api/v1/categories
+    * APIの型を選択: リスト形式
+    * APIスキーマ
+        * title/タイトル/テキストフィールド
+        * body/本文/リッチエディタ
+
+* ブログに上記を追加
+    * APIスキーマ>追加
+        * category/カテゴリー/コンテンツ参照・カテゴリー
 
 ## Link
 
