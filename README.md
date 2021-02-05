@@ -1,7 +1,9 @@
 # hige-nuxt-microcms-blog.netlify.app
 
-* [microCMS \+ NuxtでJamstackブログを作ってみよう](https://microcms.io/blog/microcms-nuxt-jamstack-blog/)
-* [NuxtのJamstack構成におけるページングの実装](https://microcms.io/blog/nuxt-jamstack-paging/)
+* 以下をベースに作成
+    * [microCMS \+ NuxtでJamstackブログを作ってみよう](https://microcms.io/blog/microcms-nuxt-jamstack-blog/)
+    * [NuxtのJamstack構成におけるページングの実装](https://microcms.io/blog/nuxt-jamstack-paging/)
+* microcms:hige-blog:blog
 
 ## Build Setup
 
