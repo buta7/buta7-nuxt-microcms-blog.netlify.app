@@ -1,4 +1,4 @@
-# hige-nuxt-microcms-blog.netlify.app
+# buta7-nuxt-microcms-blog.netlify.app
 
 * 以下をベースに作成
     * [microCMS \+ NuxtでJamstackブログを作ってみよう](https://microcms.io/blog/microcms-nuxt-jamstack-blog/)
