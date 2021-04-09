@@ -23,7 +23,7 @@ run-static: ## Run generate html
 	npm start
 
 clean: ## Clean packages
-	rm -fr node_modules package-lock.json
+	rm -fr node_modules
 
 install: clean ## Install packages
 	npm install
